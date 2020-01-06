@@ -1,7 +1,9 @@
 PROBLEM:
  We aim to create a self-driving cab, its job is to pick up the passenger at one location and drop them off in another. This cab will also take care of: Drop off the passenger to the right location. Save passenger's time by taking minimum time possible to drop off Take care of passenger's safety and traffic rules.
+
 ENVIROMENT:
 ![enviroment](/image/enviroment.png)
+
 ALGORITHM:
 ~~~
 def q_learning(episode_limit,q_table,alpha =0.1,gamma = 0.6):
@@ -23,6 +25,7 @@ def q_learning(episode_limit,q_table,alpha =0.1,gamma = 0.6):
             epoch += 1
         y[i] = epoch 
 ~~~
+
 ~~~
 def q_learning_lambda(episode_limit,q_table,alpha =0.1,gamma = 0.6,lam = 0.5):
     y = np.zeros((episode_limit,1))
@@ -53,5 +56,6 @@ def q_learning_lambda(episode_limit,q_table,alpha =0.1,gamma = 0.6,lam = 0.5):
             epoch += 1
         y[i] = epoch
 ~~~
+
 RESULT:
 
