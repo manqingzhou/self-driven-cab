@@ -8,6 +8,7 @@ Take care of passenger's safety and traffic rules
 The main idea of this project is to learning from the past and solve the problemfaster
 ALGORITHMS:
 q_learning function:
+
 def q_learning(episode_limit,q_table,alpha =0.1,gamma = 0.6):
     y = np.zeros((episode_limit,1))
     for i in range(1,episode_limit):
