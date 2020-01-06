@@ -1,11 +1,12 @@
-PROBLEM:
+**PROBLEM**:
  We aim to create a self-driving cab, its job is to pick up the passenger at one location and drop them off in another. This cab will also take care of: Drop off the passenger to the right location. Save passenger's time by taking minimum time possible to drop off Take care of passenger's safety and traffic rules.
 
 ENVIROMENT:
 
 ![enviroment](/image/enviroment.png)
 
-ALGORITHM:
+**ALGORITHM**:
+The function of Q_learning
 ~~~
 def q_learning(episode_limit,q_table,alpha =0.1,gamma = 0.6):
     y = np.zeros((episode_limit,1))
@@ -26,7 +27,7 @@ def q_learning(episode_limit,q_table,alpha =0.1,gamma = 0.6):
             epoch += 1
         y[i] = epoch 
 ~~~
-
+The function of q_learning_lambda
 ~~~
 def q_learning_lambda(episode_limit,q_table,alpha =0.1,gamma = 0.6,lam = 0.5):
     y = np.zeros((episode_limit,1))
@@ -58,10 +59,11 @@ def q_learning_lambda(episode_limit,q_table,alpha =0.1,gamma = 0.6,lam = 0.5):
         y[i] = epoch
 ~~~
 
-RESULT:
+**RESULTS**:
 Through learning from the past, the cab now can pick up and drop off passenger in less than 20 steps.
 
 ![result](/image/q_learning.png)
 
 ![result](/image/q_learning_lambda.png)
+
 
