@@ -59,4 +59,9 @@ def q_learning_lambda(episode_limit,q_table,alpha =0.1,gamma = 0.6,lam = 0.5):
 ~~~
 
 RESULT:
+Through learning from the past, the cab now can pick up and drop off passenger in less than 20 steps.
+
+![result](/image/q_learning.png)
+
+![result](/image/q_learning_lambda.png)
 
