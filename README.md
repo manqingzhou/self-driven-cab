@@ -32,8 +32,8 @@ print("Penalty happens: {}".format(penalties))
 
 #gonna write a function here
 #Parameters
-# alpha = 0.1
-# gamma = 0.6
+#alpha = 0.1
+#gamma = 0.6
 epsilon = 0.1
 #greedy policy
 q_table = np.zeros([env.observation_space.n,env.action_space.n])
@@ -45,7 +45,6 @@ def q_learning(episode_limit,q_table,alpha =0.1,gamma = 0.6):
         state = env.reset() #every single time we reset the enviroment
         epoch,penalty,reward =0,0,0
         done = False
-   
         while not done:
             action = choose_a(state)
             next_state,reward,done,info = env.step(action)
